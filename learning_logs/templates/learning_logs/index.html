@@ -1,0 +1,19 @@
+{% extends "learning_logs/base.html" %}
+
+{% block header %}
+<!-- 设置主页样式 -->
+  <div class='jumbotron'>
+    <div class="container">
+      <h1>Learning Log  <small>学习日志</small></h1>        
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  <h2>
+    <a href="{% url 'users:register' %}">注册</a>一个帐户来制作你自己的学习日志，并列出你正在学习的主题。
+  </h2>
+  <h2>
+    每当你对一个话题有了新的了解，就写一篇文章总结你学到什么。
+  </h2>
+{% endblock %}
